@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>DICE</title>
+	<link rel="shortcut icon" type="img/png" href="img/1.jpg">
+    <link rel="stylesheet" type="text/css" href="css/bet.css">
+
+  </head>
+  <body id="body">
+    <center>
+      <div class="change">
+        <h3>BET ON YOUR LUCKY NUMBER</h3>
+        <label id="change"> Change background </label>
+        <br> <br>
+        <table>
+            <tr>
+                <td><img id="result1" src="img/1.png"></td>
+                <td><img id="result2" src="img/2.png"></td>
+                <td><img id="result3" src="img/3.png"></td>
+            </tr>
+            <tr>
+                <td><img id="result4" src="img/4.png"></td>
+                <td><img id="result5" src="img/5.png"></td>
+                <td><img id="result6" src="img/6.png"></td>
+            </tr>
+        </table>
+        <div class="game">
+         <form id="mgame">
+
+            <input type="number" name="golds" min="0" max="5000" step="10" placeholder="Bet your golds" autofocus>
+            
+            <br> <br>
+            
+            Betting on: <img id="betin" alt="">
+						
+            <br> <br>
+
+            <label for="one"><img src="img/1.png" class="image" id="num1"></label><input type="radio" name="numb" id="one" value="1" autofocus style="visibility: hidden;">   
+             
+            <label for="two"><img src="img/2.png" class="image" id="num2"></label><input type="radio" name="numb" id="two" value="2" autofocus style="visibility: hidden;">
+
+            <label for="three"><img src="img/3.png" class="image" id="num3"></label><input type="radio" name="numb" id="three" value="3" autofocus style="visibility: hidden;">
+
+            <label for="four"><img src="img/4.png" class="image" id="num4"></label><input type="radio" name="numb" id="four" value="4" autofocus style="visibility: hidden;">
+
+            <label for="five"><img src="img/5.png" class="image" id="num5"></label><input type="radio" name="numb" id="five" value="5" autofocus style="visibility: hidden;">
+
+            <label for="six"><img src="img/6.png" class="image" id="num6"></label><input type="radio" name="numb" id="six" value="6" autofocus style="visibility: hidden;">
+
+            <br> <br>
+
+            <p id="msg">Have fun sir</p>
+
+            You have <span id="userScore">1000</span> golds.
+
+         </form>
+        </div>
+        <button type="button" class="button" id="roll" autofocus> ROLL </button>
+      </div>
+    </center>
+    <script type="text/JavaScript" src="js/bet.js" charset="utf-8"></script>
+  </body>
+</html>
